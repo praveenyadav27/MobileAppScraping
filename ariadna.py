@@ -26,6 +26,8 @@ cookies_new = {'symfony':'h7sp0hhr6t5llf7qgn9hvfldk4'}
 next_url = 'https://ariadna.cuatroochenta.com/webservice.php/dea/search/'
 
 def start_crawling():
+    """"function to scrape the mosque data from an app.
+        Do not run it you donot need the data.""""
     try:
         res = requests.post(url, data = post_data, headers = headers , verify = False )
         datajson = json.loads(res.text)
